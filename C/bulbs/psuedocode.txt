@@ -1,0 +1,29 @@
+I want to convert my decimal number to binary
+how will I do this?
+
+Okay, so I want to take my decimal number
+which is stored in the array respectively,
+
+Lets create a binary array. Binary[w][8]
+this array will have 2 arrays.
+w is the lengh of the string, so each
+specific value of the binary array will
+store one character. The 8 represents the
+number of 'bits'. Basically, for each character
+the 2nd array will store either a 0 or 1.
+so it may look like this:
+number = 123
+binary[0] = 123
+binary[0][0] = 0
+binary[0][1] = 1
+binary[0][2] = 1
+binary[0][3] = 1
+binary[0][4] = 1
+binary[0][5] = 0
+binary[0][6] = 1
+binary[0][7] = 1
+
+when I print each of the binary arrays of 0
+they should give me:
+01111011 which is the binary number.
+now to implement this...

@@ -1,0 +1,10 @@
+Ask for Size --> integer variable = get_int()
+Do While Loop, parameter = (variable < 1 || variable > 8)
+For Loop, variable  = 0, parameter variable < height, variable++
+nested for loops,
+first for loop controls the height, variable = x
+if the x is equal to or less then height, then only print,
+second for loop controls the hashes—y.
+if y less then or equal to x then print hash
+third loop controls dots—dots
+the number of dots will be y - height,

@@ -1,0 +1,37 @@
+sort1 uses: Bubble Sort
+
+How do you know?: Sorting time changes as arrangment changes, Ο = n² and Ω = n, in the worse case scenario
+of reversed text the time taken to sort was significantly more than the best case scenario in the sorted
+text files.
+
+sort2 uses: Merge Sort
+
+How do you know?: Sorting time remains the same, Θ = n, in the worst case scenario of reversed text files
+the time taken is similar to sorted text files. Moreover, the time taken to sort random
+text files is lower than sort3, meaning the sorting time is quicker.
+
+sort3 uses: Selection Sort
+
+How do you know?: Sorting time remains the same for both worst case and best case scenario of reversed
+and sorted text, time taken to sort is greater than sort2 for random text files, Θ = n².
+
+
+Results Table:
+
+// Mean time Taken for each sort function with each text file.
+For Each text file was sorted 3 times by each sort function, the mean real time(rt)
+taken was recorded for each text file.
+
+key: textfile.txt - rt(real time) = sortfunction(Mean real time taken in seconds)
+
+random5000.txt - rt = sort1(0.103), sort2(0.031), sort3(0.046);
+random10000.txt - rt = sort1(0.311), sort2(0.085), sort3(0.178);
+random50000.txt - rt = sort1(9.419), sort2(2.378), sort3(4.740);
+
+reversed5000.txt - rt = sort1(0.082), sort2(0.035), sort3(0.045);
+reversed10000.txt - rt = sort1(0.276), sort2(0.087), sort3(0.193);
+reversed50000.txt - rt = sort1(6.181), sort2(1.096), sort3(3.685);
+
+sorted5000.txt - rt = sort1(0.024), sort2(0.027), sort3(0.060);
+sorted10000.txt - rt = sort1(0.092), sort2(0.062), sort3(0.172);
+sorted50000.txt - rt = sort1(0.832), sort2(1.098), sort3(3.753)

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            window.onload = function() {
+
+                let buttons = document.querySelectorAll('button:not(#awww)');
+                buttons.forEach(button => {
+                    button.addEventListener('click', function() {
+                        let text = document.getElementById('ctext');
+                        if (this.id === "compiler") {
+                            this.style.backgroundColor = 'green';
+                            text.textContent = 'Correct!';
+                        } else {
+                            this.style.backgroundColor = 'red';
+                            text.textContent = 'Incorrect';
+                        }
+                    });
+                });
+
+                let search = document.querySelector("#awww");
+                search.addEventListener('click', function()
+                {
+                    let inputf = document.querySelector('#www');
+                    let text = document.getElementById('stext');
+                    if (inputf.value.toLowerCase() == 'world wide web')
+                    {
+                        inputf.style.backgroundColor = 'green';
+                        text.textContent = 'Correct!';
+                    }
+                    else
+                    {
+                        inputf.style.backgroundColor = 'Red';
+                        text.textContent = 'Incorrect';
+                    }
+                });
+
+            };
+        </script>
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>Which of the following is not a type of data structure?</h3>
+                <button id="array">Array</button>
+                <button id="stack">Stack</button>
+                <button id="queue">Queue</button>
+                <button id="compiler">Compiler</button>
+                <h3 id='ctext'></h3>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>What does the "www" stand for in a website's URL?</h3>
+                <input id="www" autocomplete="off" autofocus placeholder="Answer" type="text">
+                <button id="awww">Check Answer</button>
+                <h3 id="stext"></h3>
+            </div>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <script>
+            window.onload = function() {
+                let logo = document.querySelector('#flogo');
+                logo.addEventListener('click', function() {
+                    window.location.href = "https://www.mercedesamgf1.com/";
+                });
+
+                let home = document.querySelector('#home');
+                home.addEventListener('click', function() {
+                    window.location.href = "http://127.0.0.1:8080/index.html";
+                });
+            };
+        </script>
+        <link href="styles.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="Mercedes">
+        <meta property="og:description" content="Mercedes Page">
+        <title>Mercedes</title>
+    </head>
+
+    <body style="background-color: #590404; background-image: url('https://wallpapers.com/images/featured/blue-and-green-background-dw33udrnsivcl89d.jpg');">
+        <h1 class="text-outline" style="color: #00ff80;">Mercedes</h1>
+        <div style="text-align: center;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Mercedes_AMG_Petronas_F1_Logo.svg/768px-Mercedes_AMG_Petronas_F1_Logo.svg.png?20200910075830" alt="Mercedes F1 Logo" class="img" style="width: 300px; height: 150px;" id="flogo">
+            <p style="font-size: 15px; display: inline; background-color: #00ff80; text-align: center;">Click the Logo!</p>
+        </div>
+        <h2 class="text-outline" style="color: #00ff80;">See the Mercedes F1 Car, the W14!</h2>
+        <br>
+        <div class="video">
+            <video src="http://127.0.0.1:8080/W14.mp4" controls class="vid"></video>
+        </div>
+        <br>
+        <br>
+        <button class="button-centered" style="background-color: Red;" id="home">Go Back to Home</button>
+    </body>
+
+</html>

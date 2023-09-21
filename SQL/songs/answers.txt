@@ -1,0 +1,11 @@
+To calculte the aura, the following line of code would be used:
+SELECT AVG(energy), AVG(valence), AVG(danceability) FROM songs;
+Then looking at each of these three values, the Audio Aura score
+would be calculated combining them and taking the average. This value
+may be compared to a chart, where a certain range of Audio Aura values
+represents a certain mood.
+
+ This many not be fully representative as a song contains other Characteristics
+ like Loudness, Speechiness and Tempo.
+ A more representative figure would take the average value of these
+ three characteristics into account as well.
